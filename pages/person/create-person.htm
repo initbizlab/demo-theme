@@ -1,0 +1,16 @@
+title = "Create Person"
+url = "/people/create"
+layout = "default"
+is_hidden = 0
+
+[personCreate]
+context = "create"
+recordKey = "{{ :id }}"
+recordKeyName = "id"
+listPage = "person/list-person"
+createPage = "person/create-person"
+updatePage = "person/update-person"
+previewPage = "person/preview-person"
+
+==
+{% component 'personCreate' %}

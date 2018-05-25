@@ -11,9 +11,11 @@ description = "Default layout"
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="OctoberCMS">
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+        <link href="{{ ['$/initbiz/powercomponents/assets/ui/storm.css']|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
         {% styles %}
+        <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
     </head>
     <body>
 
@@ -36,6 +38,7 @@ description = "Default layout"
         <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
         <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
         <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        <script src="/plugins/initbiz/powercomponents/assets/js/powercomponents.js"> </script>
         {% framework extras %}
         {% scripts %}
 

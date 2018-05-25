@@ -1,0 +1,16 @@
+title = "Preview Country"
+url = "/countries/:id/preview"
+layout = "default"
+is_hidden = 0
+
+[countryPreview]
+context = "preview"
+recordKey = "{{ :id }}"
+recordKeyName = "id"
+listPage = "country/list-country"
+createPage = "country/create-country"
+updatePage = "country/update-country"
+previewPage = "country/preview-country"
+
+==
+{% component 'countryPreview' %}

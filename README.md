@@ -1,55 +1,20 @@
-Demo Theme
+Power Components Demo Theme
 ==========
 
-OctoberCMS demo theme that demonstrates the basic core functionality and utilizes the accompanying demo plugin. It is a great theme to copy when building a site from scratch. 
+This theme is fork from [octoberrain/demo-theme
+](https://github.com/octoberrain/demo-theme). It was created to test and show features of [Power Components plugin](https://octobercms.com/plugin/initbiz-powercomponents).
 
-The theme acts as a reference implementation for default component markup when distributing plugins.
+> Read the docs of Power Components here: [pc.init.biz](http://pc.init.biz/).
 
-Have fun!
+It uses the fork of [October Rain's](https://github.com/octoberrain) [Test plugin](https://github.com/octoberrain/test-plugin) that can be found here: [github.com/initbizlab/pc-test-plugin](https://github.com/initbizlab/pc-test-plugin)
 
-## Clean up instructions
+As a consequence those two themes differs in:
 
-If you clone this theme to use as a starting point. You may follow these instructions to clean up:
+* navigation (added Power Components pages)
+* including Power Components assets in head and footer
+* pages with components using Power Components
 
-1. Delete the `pages/ajax.htm` and `pages/plugins.htm` files.
-2. Delete the `partials/calcresult.htm` partial file.
-3. Delete the `partials/explain/` directory and contents.
-4. Delete the `content/placeholder/` directory and contents.
+**The theme won't work if you do not have [Power Components Test Plugin](https://github.com/initbizlab/pc-test-plugin) and [Power Components](https://octobercms.com/plugin/initbiz-powercomponents) installed.
+**
 
-## Combining CSS and JavaScript
-
-This theme doesn't combine assets for performance reasons. To combine the stylesheets, replace the following lines in the default layout. When combining with this theme, we recommend enabling the config `enableAssetDeepHashing` in the file **config/cms.php**.
-
-Uncombined stylesheets:
-
-    <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
-    <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
-
-Combined stylesheets:
-
-    <link href="{{ [
-        '@framework.extras',
-        'assets/less/vendor.less',
-        'assets/less/theme.less'
-    ]|theme }}" rel="stylesheet">
-
-> **Note**: October also includes an SCSS compiler, if you prefer.
-
-Uncombined JavaScript:
-
-    <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
-    <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
-    <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
-    {% framework extras %}
-
-Combined JavaScript:
-
-    <script src="{{ [
-        '@jquery',
-        '@framework',
-        '@framework.extras',
-        'assets/vendor/bootstrap.js',
-        'assets/javascript/app.js'
-    ]|theme }}"></script>
-
-> **Important**: Make sure you keep the `{% styles %}` and `{% scripts %}` placeholder tags as these are used by plugins for injecting assets.
+This theme was (and will be) used in videos presenting Power Components functionality.

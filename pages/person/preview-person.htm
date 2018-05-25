@@ -1,0 +1,16 @@
+title = "Preview Person"
+url = "/people/:id/preview"
+layout = "default"
+is_hidden = 0
+
+[personPreview]
+context = "preview"
+recordKey = "{{ :id }}"
+recordKeyName = "id"
+listPage = "person/list-person"
+createPage = "person/create-person"
+updatePage = "person/update-person"
+previewPage = "person/preview-person"
+
+==
+{% component 'personPreview' %}

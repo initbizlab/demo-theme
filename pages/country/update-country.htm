@@ -1,0 +1,16 @@
+title = "Update Country"
+url = "/countries/:id/update"
+layout = "default"
+is_hidden = 0
+
+[countryUpdate]
+context = "update"
+recordKey = "{{ :id }}"
+recordKeyName = "id"
+listPage = "country/list-country"
+createPage = "country/create-country"
+updatePage = "country/update-country"
+previewPage = "country/preview-country"
+
+==
+{% component 'countryUpdate' %}
