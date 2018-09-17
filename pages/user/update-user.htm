@@ -1,0 +1,16 @@
+title = "Update User"
+url = "/users/:id/update"
+layout = "default"
+is_hidden = 0
+
+[userUpdate]
+context = "update"
+recordKey = "{{ :id }}"
+recordKeyName = "id"
+listPage = "user/list-user"
+createPage = "user/create-user"
+updatePage = "user/update-user"
+previewPage = "user/preview-user"
+
+==
+{% component 'userUpdate' %}

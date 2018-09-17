@@ -1,0 +1,16 @@
+title = "Manage newsletter"
+url = "/manage-newsletter/:email/:token"
+layout = "default"
+is_hidden = 0
+
+[newsletterConfirm]
+token = "{{ :token }}"
+email = "{{ :email }}"
+==
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            {% component 'newsletterConfirm' %}
+        </div>
+    </div>
+</div>
